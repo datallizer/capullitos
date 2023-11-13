@@ -1,0 +1,27 @@
+.print{
+    margin: 0px !important;
+    padding: 0px !important;
+    width: 100vw;
+}
+
+.back{
+    display: none;
+}
+
+h2{
+    font-size: 20px;
+}
+
+div, label {
+    page-break-inside: avoid;
+}
+
+label{
+    font-weight:lighter;
+    font-size: 12px;
+}
+
+.verimg img{
+    width: 30%;
+    margin-bottom: 30px;
+  }

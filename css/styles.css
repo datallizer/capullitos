@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css?family=Signika");
+*{
+    font-family: Signika, sans-serif; 
+}
+
+body{
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+.btnalerta{
+    color: #ff8282 !important;
+    text-decoration: underline;
+    
+}
+
+.bgmnpd{
+    padding: 20px 10px;
+}
+
+.txtsize{
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.txtsize h2{
+    font-size: 20px;
+}
+
+.txtsize p{
+    text-align: justify;
+    font-size: 13px;
+    min-height: 120px;
+}
+
+.txtsize a{
+    background-color: #ffffff;
+    text-decoration: none;
+    padding: 0px 10px;
+    display: flex; 
+    justify-content: flex-end;
+}
+
+nav{
+    border-radius: 15px;
+    font-weight: 500;
+    margin: 20px;
+}
+
+
+nav li a{
+    color: #ff8282 !important;
+    text-shadow: 2px 1px 1px #f0f0f0;
+}
+
+nav a:hover{
+    color: #f02828 !important;
+}
+
+.social{
+    margin: 20px;
+}
+
+.social i{
+    font-size: 25px;
+    color: #ffffff;
+    border-radius: 100px;
+    padding: 5px 9px;
+    padding-top: 9px;
+}
+
+.bi-facebook {
+    background-color: #3B5998;
+  }
+
+  .bi-messenger {
+    background-color: #348fc4;
+  }
+
+  .bi-whatsapp {
+    background-color: #00ff95;
+  }
+
+  .bi-instagram {
+    background-color: #cf2382;
+  }
+
+  .txtacerca{
+    padding: 20px;
+    color: #77b8db;
+    text-align: justify !important;
+  }
+
+  .imggalery{
+    padding: 10px;
+  }
+
+  .imggalery img{
+    width: 100%;
+  }
+
+  .escotxt{
+    font-size: 25px;
+  }
+
+  .escoh2 h2{
+    font-weight: bolder;
+    font-size: 80px;
+  }
+
+  .verde{
+    color: #9cd3a5 !important;
+  }
+
+  .azul{
+    color: #77b8db;
+  }
+
+  .rojo{
+    color: #ff8282;
+  }
+
+  .rosa{
+    color: #ffbcbc;
+  }
+
+  .verde h2{
+    color: #53945e !important;
+    font-size: 75px;
+    margin-top: 25px;
+}
+
+.daytxt{
+    font-size: 25px;
+    
+}
+
+.dayservic{
+    margin: 50px 0px;
+}
+
+.contactmp{
+    padding: 50px;
+}
+
+.colform{
+    padding:80px;
+}
+
+.markp p{
+    margin: 35px 0px;
+}
+
+.mgver{
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+}
+
+.mgver h2{
+  font-size: 20px;
+}
+
+.verimg img{
+  width: 30%;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.loginpad{
+  padding: 50px;
+  border-radius: 15px;
+}
+
+.espaciado{
+  margin-top: 10px !important;
+}
+.agendacard{
+  background-color: #ffffff;
+  padding: 20px !important;
+  border-radius: 15px;
+}
+.form-label{
+  margin-left: 10px;
+}
+@media screen and (max-width: 1000px) {
+    .contbody{
+        margin: 10px;
+    }
+
+    .btnalerta{
+        font-size: 12px;
+    }
+
+    .txtsize{
+        margin-top: 10px;
+    }
+
+    .txtsize p{
+      min-height: 10px;
+  }
+
+    .fbcont{
+        margin: 20px 0px;
+    }
+
+    .social>.col-1{
+        margin-right: 15px;
+    }
+
+    .escoh2 h2{
+        font-size: 40px;
+      }
+
+      .escotxt{
+        font-size: 17px;
+      }
+
+      .conexco{
+        width:90vw;
+      }
+
+      .verde h2{
+        font-size: 55px;
+    }
+    
+    .daytxt{
+        font-size: 15px;
+    }
+
+    .verimg img{
+      width: 70%;
+    }
+}

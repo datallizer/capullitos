@@ -1,0 +1,80 @@
+.formulario{
+	width: 100%;
+}
+
+.box-input{
+	border-bottom: 1px solid #747474;
+	position: relative;
+	margin: 30px 0;
+}
+
+.box-input input{
+	font-size: 16px;
+	color: rgb(94, 94, 94);
+	border: none;
+	width: 100%;
+	outline: none;
+	background: none;
+	padding: 0 1px;
+	height: 40px;
+}
+
+.box-input span{
+  color: rgb(75, 75, 75);
+}
+
+.box-input span::before{
+	content: attr(data-placeholder);
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	color: rgb(97, 97, 97);
+	transform: translateY(-50%);
+	z-index: 99;
+	transition: .5s;
+}
+
+.box-input span::after{
+	content: '';
+	position: absolute;
+    left: 0;
+    bottom: 0;
+	width: 0%;
+	height: 2px;
+	background: linear-gradient(120deg, #3498db, #16c766);
+	transition: .5s;
+    text-align: left !important;
+}
+
+.focus + span::before{
+	top: -5px;
+}
+
+.focus + span::after{
+	width: 100%;
+  left: 0;
+}
+
+.boton{
+	display: block;
+	width: 100%;
+	height: 50px;
+	background-color: #9cd3a5;
+	border: solid 2px #9cd3a5;
+	color: #fff;
+	border-radius: 5px;
+	font-weight: 600;
+	font-size: 18px;
+	box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
+
+}
+
+.boton:hover{
+	background-color: #2F855A;
+	border: solid 2px #2F855A;
+	transition: .5s;
+}
+
+.wa{
+    color: #fff !important;
+}
