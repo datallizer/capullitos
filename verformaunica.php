@@ -1,11 +1,28 @@
 <?php
 session_start();
-if(!$_SESSION['user']){
-// si no hay sesion del usuario, es decir no esta logeado lo redirijo a la pagina de login
-    header("Location: login.php");
-     exit();
-}
 require 'dbcon.php';
+
+//Verificar si existe una sesión activa y los valores de usuario y contraseña están establecidos
+if (isset($_SESSION['username'])) {
+    $username = $_SESSION['username'];
+
+    // Consultar la base de datos para verificar si los valores coinciden con algún registro en la tabla de usuarios
+    $query = "SELECT * FROM user WHERE username = '$username'";
+    $result = mysqli_query($con, $query);
+
+    // Si se encuentra un registro coincidente, el usuario está autorizado
+    if (mysqli_num_rows($result) > 0) {
+        // El usuario está autorizado, se puede acceder al contenido
+    } else {
+        // Redirigir al usuario a una página de inicio de sesión
+        header('Location: login.php');
+        exit(); // Finalizar el script después de la redirección
+    }
+} else {
+    // Redirigir al usuario a una página de inicio de sesión si no hay una sesión activa
+    header('Location: login.php');
+    exit(); // Finalizar el script después de la redirección
+}
 ?>
 <!doctype html>
 <html lang="en">
