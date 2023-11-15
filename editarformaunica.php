@@ -72,166 +72,166 @@ if (isset($_SESSION['username'])) {
             <div class="col-12 text-center"><h2>NOMBRE DEL NIÑO (A)</h2>
         </div>
 
-        <div class="col-12 col-md-3">
-            <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-            <input name="nombre" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['nombre']; ?>">
+        <div class="col-12 col-md-3 form-floating">
+        <input name="nombre" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['nombre']; ?>" placeholder="Nombre" required>
+            <label for="exampleFormControlInput1" class="form-label">Nombre</label><br>
         </div>
 
-        <div class="col-12 col-md-3">
-            <label for="exampleFormControlInput1" class="form-label">Apellido paterno</label>
-            <input name="apellidop" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['apellidop']; ?>">
+        <div class="col-12 col-md-3 form-floating">
+        <input name="apellidop" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['apellidop']; ?>" placeholder="Apellido paterno" required>
+            <label for="exampleFormControlInput1" class="form-label">Apellido paterno</label><br>
         </div>
 
-        <div class="col-12 col-md-3">
+        <div class="col-12 col-md-3 form-floating">
+        <input name="apellidom" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['apellidom']; ?>" placeholder="Apellido mmaterno" required>
             <label for="exampleFormControlInput1" class="form-label">Apellido materno</label>
-            <input name="apellidom" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['apellidom']; ?>">
         </div>
 
-        <div class="col-5">
-            <label for="exampleFormControlInput1" class="form-label">Fecha de nacimiento</label>
-            <input name="fechaNac" type="date" class="form-control" id="exampleFormControlInput1" value="<?= $student['fechaNac']; ?>">
+        <div class="col-5 form-floating">
+        <input name="fechaNac" type="date" class="form-control" id="exampleFormControlInput1" value="<?= $student['fechaNac']; ?>" placeholder="Fecha de nacimiento" required>
+            <label for="exampleFormControlInput1" class="form-label">Fecha de nacimiento</label><br>
 
         </div>
 
-        <div class="col-4">
+        <div class="col-4 form-floating">
+        <input name="edad" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['edad']; ?>" placeholder="Edad" required>
             <label for="exampleFormControlInput1" class="form-label">Edad</label>
-            <input name="edad" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['edad']; ?>">
         </div>
 
-        <div class="col-12 col-md-6">
-            <label for="exampleFormControlInput1" class="form-label">Dirección</label>
-            <input name="direccion" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['direccion']; ?>">
+        <div class="col-12 col-md-6 form-floating">
+        <input name="direccion" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['direccion']; ?>" placeholder="Dirección" required>
+            <label for="exampleFormControlInput1" class="form-label">Dirección</label><br>
         </div>
 
-        <div class="col-5 col-md-3">
+        <div class="col-5 col-md-3 form-floating">
+        <input name="quien" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['quien']; ?>" placeholder="El menor vive con:" required>
             <label for="exampleFormControlInput1" class="form-label">El menor vive con:</label>
-            <input name="quien" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['quien']; ?>">
         </div>
 
-        <div class="col-7 col-md-9">
-            <label for="exampleFormControlInput1" class="form-label">Observaciones especiales</label>
-            <input name="observaciones" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['observaciones']; ?>">
+        <div class="col-7 col-md-9 form-floating">
+        <input name="observaciones" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['observaciones']; ?>" placeholder="Observaciones especiales" required>
+            <label for="exampleFormControlInput1" class="form-label">Observaciones especiales</label><br>
         </div>
 
         <div class="col-12 text-center">
             <h2>INFORMACIÓN DEL PADRE, MADRE O TUTOR</h2>
         </div>
 
-        <div class="col-12 col-md-9">
-            <label for="exampleFormControlInput1" class="form-label">Nombre del padre / madre o tutor (obligatorio)</label>
-            <input name="nombrepmtuno" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['nombrepmtuno']; ?>">
+        <div class="col-12 col-md-9 form-floating">
+        <input name="nombrepmtuno" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['nombrepmtuno']; ?>" placeholder="Nombre del padre / madre o tutor (obligatorio)" required>
+            <label for="exampleFormControlInput1" class="form-label">Nombre del padre / madre o tutor (obligatorio)</label><br>
         </div>
 
-        <div class="col-5 col-md-4">
-            <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
-            <input name="teluno" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['teluno']; ?>">
+        <div class="col-5 col-md-4 form-floating">
+        <input name="teluno" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['teluno']; ?>" placeholder="Teléfono" required>
+            <label for="exampleFormControlInput1" class="form-label">Teléfono</label><br>
         </div>
 
-        <div class="col-7 col-md-5">
+        <div class="col-7 col-md-5 form-floating">
+        <input name="emailuno" type="email" class="form-control" id="exampleFormControlInput1" value="<?= $student['emailuno']; ?>" placeholder="Correo" required>
             <label for="exampleFormControlInput1" class="form-label">Correo</label>
-            <input name="emailuno" type="email" class="form-control" id="exampleFormControlInput1" value="<?= $student['emailuno']; ?>">
         </div>
 
-        <div class="col-12 col-md-9">
-            <label for="exampleFormControlInput1" class="form-label">Nombre del padre / madre o tutor (opcional)</label>
-            <input name="nombrepmtdos" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['nombrepmtdos']; ?>">
+        <div class="col-12 col-md-9 form-floating">
+        <input name="nombrepmtdos" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['nombrepmtdos']; ?>" placeholder="Nombre del padre / madre o tutor (opcional)" required>
+            <label for="exampleFormControlInput1" class="form-label">Nombre del padre / madre o tutor (opcional)</label><br>
         </div>
 
-        <div class="col-5 col-md-4">
+        <div class="col-5 col-md-4 form-floating">
+        <input name="teldos" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['teldos']; ?>" placeholder="Teléfono" required>
             <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
-            <input name="teldos" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['teldos']; ?>">
         </div>
 
-        <div class="col-7 col-md-5">
-            <label for="exampleFormControlInput1" class="form-label">Correo</label>
-            <input name="emaildos" type="email" class="form-control" id="exampleFormControlInput1" value="<?= $student['emaildos']; ?>">
+        <div class="col-7 col-md-5 form-floating">
+        <input name="emaildos" type="email" class="form-control" id="exampleFormControlInput1" value="<?= $student['emaildos']; ?>" placeholder="Correo" required>
+            <label for="exampleFormControlInput1" class="form-label">Correo</label><br>
         </div>
 
         <div class="col-12 text-center">
-            <h2>A QUIEN LLAMAR EN CASO DE NO PODER CONTACTÁR AL PADRE, MADRE O TUTOR EN UNA EMERGENCIA</h2>
+            <h2>A QUIEN LLAMAR EN CASO DE NO PODER CONTACTÁR AL PADRE, MADRE O TUTOR EN UNA EMERGENCIA</h2><br>
         </div>
 
-        <div class="col-12 col-md-9">
-            <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-            <input name="nombremergencia" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['nombremergencia']; ?>">
+        <div class="col-12 col-md-9 form-floating">
+        <input name="nombremergencia" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['nombremergencia']; ?>" placeholder="Nombre" required>
+            <label for="exampleFormControlInput1" class="form-label">Nombre</label><br>
         </div>
 
-        <div class="col-5 col-md-4">
-            <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
-            <input name="telemergencia" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['telemergencia']; ?>">
+        <div class="col-5 col-md-4 form-floating">
+        <input name="telemergencia" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['telemergencia']; ?>" placeholder="Teléfono" required>
+            <label for="exampleFormControlInput1" class="form-label">Teléfono</label><br>
         </div>
 
-        <div class="col-7 col-md-5">
+        <div class="col-7 col-md-5 form-floating">
+        <input name="relacion" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['relacion']; ?>" placeholder="Relación con el menor" required>
             <label for="exampleFormControlInput1" class="form-label">Relación con el menor</label>
-            <input name="relacion" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['relacion']; ?>">
         </div>
 
-        <div class="col-12 col-md-9">
-            <label for="exampleFormControlInput1" class="form-label">Dirección</label>
-            <input name="direccionemergencia" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['direccionemergencia']; ?>">
+        <div class="col-12 col-md-9 form-floating">
+        <input name="direccionemergencia" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['direccionemergencia']; ?>" placeholder="Dirección" required>
+            <label for="exampleFormControlInput1" class="form-label">Dirección</label><br>
         </div>
 
         <div class="col-12 text-center">
-                <h2>INFORMACIÓN MEDICA</h2>
+                <h2>INFORMACIÓN MEDICA</h2><br>
         </div>
 
-        <div class="col-12 col-md-9">
-            <label for="exampleFormControlInput1" class="form-label">Doctor / Pediatra</label>
-            <input name="doctor" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['doctor']; ?>">
+        <div class="col-12 col-md-9 form-floating">
+        <input name="doctor" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['doctor']; ?>" placeholder="Doctor / Pediatra" required>
+            <label for="exampleFormControlInput1" class="form-label">Doctor / Pediatra</label><br>
         </div>
 
-        <div class="col-5 col-md-4">
-            <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
-            <input name="teldoc" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['teldoc']; ?>">
+        <div class="col-5 col-md-4 form-floating">
+        <input name="teldoc" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['teldoc']; ?>" placeholder="Teléfono" required>
+            <label for="exampleFormControlInput1" class="form-label">Teléfono</label><br>
         </div>
 
-        <div class="col-7 col-md-5">
+        <div class="col-7 col-md-5 form-floating">
+        <input name="direcciondoc" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['direcciondoc']; ?>" placeholder="Dirección" required>
             <label for="exampleFormControlInput1" class="form-label">Dirección</label>
-            <input name="direcciondoc" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['direcciondoc']; ?>">
         </div>
 
-        <div class="col-12 col-md-9">
-            <label for="exampleFormControlInput1" class="form-label">Dentista</label>
-            <input name="dentista" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['dentista']; ?>">
+        <div class="col-12 col-md-9 form-floating">
+        <input name="dentista" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['dentista']; ?>" placeholder="Dentista" required>
+            <label for="exampleFormControlInput1" class="form-label">Dentista</label><br>
         </div>
 
-        <div class="col-5 col-md-4">
-            <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
-            <input name="teldent" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['teldent']; ?>">
+        <div class="col-5 col-md-4 form-floating">
+        <input name="teldent" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['teldent']; ?>" placeholder="Teléfono" required>
+            <label for="exampleFormControlInput1" class="form-label">Teléfono</label><br>
         </div>
 
-        <div class="col-7 col-md-5">
+        <div class="col-7 col-md-5 form-floating">
+        <input name="direcciondent" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['direcciondent']; ?>" placeholder="Dirección" required>
             <label for="exampleFormControlInput1" class="form-label">Dirección</label>
-            <input name="direcciondent" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['direcciondent']; ?>">
         </div>
 
-        <div class="col-6 col-md-5">
-            <label for="exampleFormControlInput1" class="form-label">Trasladar en caso de emergencia</label>
-            <input name="trasladar" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['trasladar']; ?>">
+        <div class="col-6 col-md-5 form-floating">
+        <input name="trasladar" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['trasladar']; ?>" placeholder="Trasladar en caso de emergencia" required>
+            <label for="exampleFormControlInput1" class="form-label">Trasladar en caso de emergencia</label><br>
         </div>
 
-        <div class="col-6 col-md-4">
-            <label for="exampleFormControlInput1" class="form-label">Numero de registro en el seguro</label>
-            <input name="ssn" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['ssn']; ?>">
+        <div class="col-6 col-md-4 form-floating">
+        <input name="ssn" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['ssn']; ?>" placeholder="Numero de registro en el seguro" required>
+            <label for="exampleFormControlInput1" class="form-label">Numero de registro en el seguro</label><br>
         </div>
 
             <div class="col-12 text-center">
-                <h2>PERSONA AUTORIZADA A REGOGER AL NIÑO DE LA GUARDERÍA</h2>
+                <h2>PERSONA AUTORIZADA A REGOGER AL NIÑO DE LA GUARDERÍA</h2><br>
         </div>
 
-        <div class="col-12 col-md-9">
-            <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-            <input name="autorizado" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['autorizado']; ?>">
+        <div class="col-12 col-md-9 form-floating">
+        <input name="autorizado" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['autorizado']; ?>" placeholder="Nombre" required>
+            <label for="exampleFormControlInput1" class="form-label">Nombre</label><br>
         </div>
 
-        <div class="col-5 col-md-4">
-            <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
-            <input name="telauto" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['telauto']; ?>">
+        <div class="col-5 col-md-4 form-floating">
+        <input name="telauto" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['telauto']; ?>" placeholder="Telefono" required>
+        <label for="exampleFormControlInput1" class="form-label">Telefono</label>    
         </div>
 
-        <div class="col-7 col-md-5">
-            <label for="exampleFormControlInput1" class="form-label">Relación con el niño</label>
-            <input name="relacionauto" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['relacionauto']; ?>">
+        <div class="col-7 col-md-5 form-floating">
+        <input name="relacionauto" type="text" class="form-control" id="exampleFormControlInput1" value="<?= $student['relacionauto']; ?>" placeholder="Relación con el niño" required>
+            <label for="exampleFormControlInput1" class="form-label">Relación con el niño</label><br>
         </div>
 
         <div class="col-12 col-md-9 text-center">

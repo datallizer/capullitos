@@ -72,165 +72,166 @@ if (isset($_SESSION['username'])) {
             <div class="col-12 text-center"><h2>NOMBRE DEL NIÑO (A)</h2>
         </div>
 
-        <div class="col-4">
-            <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-            <p class="form-control"><?=$student['nombre'];?></p>
+        <div class="col-4 form-floating">
+            <input name="nombre" id="nombre" type="text" class="form-control" autocomplete="off" value="<?=$student['nombre']; ?>" placeholder="Nombre" required>
+            <label for="exampleFormControlInput1" class="form-label">Nombre</label><br>
         </div>
 
-        <div class="col-4">
-            <label for="exampleFormControlInput1" class="form-label">Apellido paterno</label>
-            <p class="form-control"><?=$student['apellidop'];?></p>
+        <div class="col-4 form-floating">
+        <input name="apellido" id="apellido" type="text" class="form-control" value="<?=$student['apellidop']; ?>" autocomplete="off" placeholder="Apellido Paterno" required>
+        <label for="exampleFormControlInput1" class="form-label">Apellido paterno</label><br>
         </div>
 
-        <div class="col-4">
+        <div class="col-4 form-floating">
+            <input name="apellido" id="apellido" type="text" class="form-control" value="<?=$student['apellidom']; ?>" autocomplete="off" placeholder="Apellido Materno" required>
             <label for="exampleFormControlInput1" class="form-label">Apellido materno</label>
-            <p class="form-control"><?=$student['apellidom'];?></p>
+            
         </div>
 
-        <div class="col-6">
-            <label for="exampleFormControlInput1" class="form-label">Fecha de nacimiento</label>
-            <p class="form-control"><?=$student['fechaNac'];?></p>
+        <div class="col-6 form-floating">
+        <input name="apellido" id="apellido" type="text" class="form-control" value="<?=$student['fechaNac']; ?>" autocomplete="off" placeholder="Fecha de Nacimiento" required>
+        <label for="exampleFormControlInput1" class="form-label">Fecha de nacimiento</label><br>
         </div>
 
-        <div class="col-6">
-            <label for="exampleFormControlInput1" class="form-label">Edad</label>
-            <p class="form-control"><?=$student['edad'];?></p>
+        <div class="col-6 form-floating">
+        <input name="apellido" id="apellido" type="text" class="form-control" value="<?=$student['edad']; ?>" autocomplete="off" placeholder="Edad" required>
+        <label for="exampleFormControlInput1" class="form-label">Edad</label>
         </div>
 
-        <div class="col-8">
-            <label for="exampleFormControlInput1" class="form-label">Dirección</label>
-            <p class="form-control"><?=$student['direccion'];?></p>
+        <div class="col-8 form-floating">
+        <input name="apellido" id="apellido" type="text" class="form-control" value="<?=$student['direccion']; ?>" autocomplete="off" placeholder="Direccion" required>
+        <label for="exampleFormControlInput1" class="form-label">Dirección</label><br>
         </div>
 
-        <div class="col-4">
+        <div class="col-4 form-floating">
+            <input name="apellido" id="apellido" type="text" class="form-control" value="<?=$student['quien']; ?>" autocomplete="off" placeholder="El menor vive con:" required>
             <label for="exampleFormControlInput1" class="form-label">El menor vive con:</label>
-            <p class="form-control"><?=$student['quien'];?></p>
         </div>
 
-        <div class="col-12">
-            <label for="exampleFormControlInput1" class="form-label">Observaciones especiales</label>
-            <p class="form-control"><?=$student['observaciones'];?></p>
+        <div class="col-12 form-floating">
+        <input name="apellido" id="apellido" type="text" class="form-control" value="<?=$student['observaciones']; ?>" autocomplete="off" placeholder="Observaciones especiales" required>
+        <label for="exampleFormControlInput1" class="form-label">Observaciones especiales</label><br>
         </div>
 
         <div class="col-12 text-center">
             <h2>INFORMACIÓN DEL PADRE, MADRE O TUTOR</h2>
         </div>
 
-        <div class="col-12">
-            <label for="exampleFormControlInput1" class="form-label">Nombre del padre / madre o tutor (obligatorio)</label>
-            <p class="form-control"><?=$student['nombrepmtuno'];?></p>
+        <div class="col-12 form-floating">
+        <input name="apellido" id="apellido" type="text" class="form-control" value="<?=$student['nombrepmtuno']; ?>" autocomplete="off" placeholder="Nombre del padre / madre o tutor (obligatorio)" required>
+        <label for="exampleFormControlInput1" class="form-label">Nombre del padre / madre o tutor (obligatorio)</label><br>
         </div>
 
-        <div class="col-4">
+        <div class="col-4 form-floating">
+        <input name="apellido" id="apellido" type="text" class="form-control" value="<?=$student['teluno']; ?>" autocomplete="off" placeholder="Telefono" required>
+        <label for="exampleFormControlInput1" class="form-label">Teléfono</label><br>
+        </div>
+
+        <div class="col-8 form-floating">
+        <input name="apellido" id="apellido" type="text" class="form-control" value="<?=$student['emailuno']; ?>" autocomplete="off" placeholder="Correo" required>
+        <label for="exampleFormControlInput1" class="form-label">Correo</label>
+        </div>
+
+        <div class="col-12 form-floating">
+            <input name="apellido" id="apellido" type="text" class="form-control" value="<?=$student['nombrepmtdos']; ?>" autocomplete="off" placeholder="Nombre del padre / madre o tutor (opcional)" required>
+            <label for="exampleFormControlInput1" class="form-label">Nombre del padre / madre o tutor (opcional)</label><br>
+        </div>
+
+        <div class="col-4 form-floating">
+            <input name="apellido" id="apellido" type="text" class="form-control" value="<?=$student['teldos']; ?>" autocomplete="off" placeholder="Teléfono" required>
             <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
-            <p class="form-control"><?=$student['teluno'];?></p>
         </div>
 
-        <div class="col-8">
-            <label for="exampleFormControlInput1" class="form-label">Correo</label>
-            <p class="form-control"><?=$student['emailuno'];?></p>
-        </div>
-
-        <div class="col-12">
-            <label for="exampleFormControlInput1" class="form-label">Nombre del padre / madre o tutor (opcional)</label>
-            <p class="form-control"><?=$student['nombrepmtdos'];?></p>
-        </div>
-
-        <div class="col-4">
-            <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
-            <p class="form-control"><?=$student['teldos'];?></p>
-        </div>
-
-        <div class="col-8">
-            <label for="exampleFormControlInput1" class="form-label">Correo</label>
-            <p class="form-control"><?=$student['emaildos'];?></p>
+        <div class="col-8 form-floating">
+            <input name="apellido" id="apellido" type="text" class="form-control" value="<?=$student['emaildos']; ?>" autocomplete="off" placeholder="Correo" required>
+            <label for="exampleFormControlInput1" class="form-label">Correo</label><br>
         </div><br>
 
         <div class="col-12 text-center">
             <h2>A QUIEN LLAMAR EN CASO DE NO PODER CONTACTÁR AL PADRE, MADRE O TUTOR EN UNA EMERGENCIA</h2>
         </div>
 
-        <div class="col-9">
-            <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-            <p class="form-control"><?=$student['nombremergencia'];?></p>
+        <div class="col-9 form-floating">
+            <input name="apellido" id="apellido" type="text" class="form-control" value="<?=$student['nombremergencia']; ?>" autocomplete="off" placeholder="Nombre" required>
+            <label for="exampleFormControlInput1" class="form-label">Nombre</label><br>
         </div>
 
-        <div class="col-3">
-            <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
-            <p class="form-control"><?=$student['telemergencia'];?></p>
+        <div class="col-3 form-floating">
+        <input name="apellido" id="apellido" type="text" class="form-control" value="<?=$student['telemergencia']; ?>" autocomplete="off" placeholder="Telefono" required>
+        <label for="exampleFormControlInput1" class="form-label">Teléfono</label><br>
         </div>
 
-        <div class="col-4">
-            <label for="exampleFormControlInput1" class="form-label">Relación con el menor</label>
-            <p class="form-control"><?=$student['relacion'];?></p>
+        <div class="col-4 form-floating">
+        <input name="apellido" id="apellido" type="text" class="form-control" value="<?=$student['relacion']; ?>" autocomplete="off" placeholder="Relación con el menor" required>
+        <label for="exampleFormControlInput1" class="form-label">Relación con el menor</label>
         </div>
 
-        <div class="col-8">
-            <label for="exampleFormControlInput1" class="form-label">Dirección</label>
-            <p class="form-control"><?=$student['direccionemergencia'];?></p>
+        <div class="col-8 form-floating">
+        <input name="apellido" id="apellido" type="text" class="form-control" value="<?=$student['direccionemergencia']; ?>" autocomplete="off" placeholder="Dirección" required>
+        <label for="exampleFormControlInput1" class="form-label">Dirección</label><br>
         </div>
 
         <div class="col-12 text-center">
                 <h2>INFORMACIÓN MEDICA</h2>
         </div>
 
-        <div class="col-12">
-            <label for="exampleFormControlInput1" class="form-label">Doctor / Pediatra</label>
-            <p class="form-control"><?=$student['doctor'];?></p>
+        <div class="col-12 form-floating">
+        <input name="apellido" id="apellido" type="text" class="form-control" value="<?=$student['doctor']; ?>" autocomplete="off" placeholder="Doctor / Pediatra" required>
+        <label for="exampleFormControlInput1" class="form-label">Doctor / Pediatra</label><br>
         </div>
 
-        <div class="col-3">
-            <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
-            <p class="form-control"><?=$student['teldoc'];?></p>
+        <div class="col-3 form-floating">
+        <input name="apellido" id="apellido" type="text" class="form-control" value="<?=$student['teldoc']; ?>" autocomplete="off" placeholder="Teléfono" required>
+        <label for="exampleFormControlInput1" class="form-label">Teléfono</label><br>
         </div>
 
-        <div class="col-9">
-            <label for="exampleFormControlInput1" class="form-label">Dirección</label>
-            <p class="form-control"><?=$student['direcciondoc'];?></p>
+        <div class="col-9 form-floating">
+        <input name="apellido" id="apellido" type="text" class="form-control" value="<?=$student['direcciondoc']; ?>" autocomplete="off" placeholder="Dirección" required>
+        <label for="exampleFormControlInput1" class="form-label">Dirección</label>
         </div>
 
-        <div class="col-12">
-            <label for="exampleFormControlInput1" class="form-label">Dentista</label>
-            <p class="form-control"><?=$student['dentista'];?></p>
+        <div class="col-12 form-floating">
+        <input name="apellido" id="apellido" type="text" class="form-control" value="<?=$student['dentista']; ?>" autocomplete="off" placeholder="Dentista" required>
+        <label for="exampleFormControlInput1" class="form-label">Dentista</label><br>
         </div>
 
-        <div class="col-3">
-            <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
-            <p class="form-control"><?=$student['teldent'];?></p>
+        <div class="col-3 form-floating">
+        <input name="apellido" id="apellido" type="text" class="form-control" value="<?=$student['teldent']; ?>" autocomplete="off" placeholder="Teléfono" required>
+        <label for="exampleFormControlInput1" class="form-label">Teléfono</label><br>
         </div>
 
-        <div class="col-9">
-            <label for="exampleFormControlInput1" class="form-label">Dirección</label>
-            <p class="form-control"><?=$student['direcciondent'];?></p>
+        <div class="col-9 form-floating">
+        <input name="apellido" id="apellido" type="text" class="form-control" value="<?=$student['direcciondent']; ?>" autocomplete="off" placeholder="Dirección" required>
+        <label for="exampleFormControlInput1" class="form-label">Dirección</label>
         </div>
 
-        <div class="col-6">
-            <label for="exampleFormControlInput1" class="form-label">Trasladar en caso de emergencia</label>
-            <p class="form-control"><?=$student['trasladar'];?></p>
+        <div class="col-6 form-floating">
+        <input name="apellido" id="apellido" type="text" class="form-control" value="<?=$student['trasladar']; ?>" autocomplete="off" placeholder="Trasladar en caso de emergencia" required>
+        <label for="exampleFormControlInput1" class="form-label">Trasladar en caso de emergencia</label><br>
         </div>
 
-        <div class="col-6">
-            <label for="exampleFormControlInput1" class="form-label">Numero de registro en el seguro</label>
-            <p class="form-control"><?=$student['ssn'];?></p>
+        <div class="col-6 form-floating">
+        <input name="apellido" id="apellido" type="text" class="form-control" value="<?=$student['ssn']; ?>" autocomplete="off" placeholder="Numero de registro en el seguro" required>
+        <label for="exampleFormControlInput1" class="form-label">Numero de registro en el seguro</label><br>
         </div>
 
             <div class="col-12 text-center">
                 <h2>PERSONA AUTORIZADA A REGOGER AL NIÑO DE LA GUARDERÍA</h2>
         </div>
 
-        <div class="col-12">
-            <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-            <p class="form-control"><?=$student['autorizado'];?></p>
+        <div class="col-12 form-floating">
+        <input name="apellido" id="apellido" type="text" class="form-control" value="<?=$student['autorizado']; ?>" autocomplete="off" placeholder="Nombre" required>
+        <label for="exampleFormControlInput1" class="form-label">Nombre</label><br>
         </div>
 
-        <div class="col-4">
-            <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
-            <p class="form-control"><?=$student['telauto'];?></p>
+        <div class="col-4 form-floating">
+        <input name="telauto"  type="text" class="form-control" value="<?=$student['telauto']; ?>" autocomplete="off" placeholder="Teléfono" required>
+        <label for="exampleFormControlInput1" class="form-label">Telefono</label>
         </div>
 
-        <div class="col-8">
-            <label for="exampleFormControlInput1" class="form-label">Relación con el niño</label>
-            <p class="form-control"><?=$student['relacionauto'];?></p>
+        <div class="col-8 form-floating">
+        <input name="relacionauto" type="text" class="form-control" value="<?=$student['relacionauto']; ?>" autocomplete="off" placeholder="Relación con el niño" required>
+        <label for="exampleFormControlInput1" class="form-label">Relación con el niño</label><br>
         </div>
 
     <?php
