@@ -123,7 +123,7 @@ if (isset($_SESSION['username'])) {
                     var day = date.getDay();
                     return [(day !== 0), '']; // Deshabilitar domingos (0: domingo)
                 },
-                dateFormat: 'dd-mm-yy' // Formato de la fecha
+                dateFormat: 'yy-mm-dd' // Formato de la fecha
             });
 
             // Ocultar los campos de horas y costo al principio

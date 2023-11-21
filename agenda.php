@@ -47,7 +47,7 @@ if (isset($_SESSION['username'])) {
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-header">
-                                <h4>BASE DE DATOS DE FORMA UNICA DE IDENTIFICACIÓN Y EMERGENCIA
+                                <h4>AGENDA DAYCARE
                                     <a href="formaunicadeidentificacion.php" class="btn btn-primary float-end">Crear Forma</a>
                                 </h4>
                             </div>
