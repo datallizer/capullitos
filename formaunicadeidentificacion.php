@@ -1,6 +1,27 @@
 <?php
 session_start();
 require 'dbcon.php';
+$message = isset($_SESSION['message']) ? $_SESSION['message'] : ''; // Obtener el mensaje de la sesión
+
+if (!empty($message)) {
+    // HTML y JavaScript para mostrar la alerta...
+    echo "<script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const message = " . json_encode($message) . ";
+                Swal.fire({
+                    title: 'NOTIFICACIÓN',
+                    text: message,
+                    icon: 'info',
+                    confirmButtonText: 'OK'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        // Hacer algo si se confirma la alerta
+                    }
+                });
+            });
+        </script>";
+    unset($_SESSION['message']); // Limpiar el mensaje de la sesión
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -504,6 +525,7 @@ require 'dbcon.php';
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/sweetalert2@10'></script>
     <script>
         AOS.init();
         $(document).ready(function() {

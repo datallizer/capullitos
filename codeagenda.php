@@ -105,7 +105,7 @@ if(isset($_POST['save']))
         $_SESSION['dia'] = $dia;
         $_SESSION['costo'] = $costo;
         $_SESSION['horas'] = $horas;
-        $_SESSION['message'] = "Agendado exitosamente";
+        $_SESSION['message'] = "Continua con el Paso 2: Llenado de forma unica de identificación, si ya la habías llenado anteriormente solamente selecciona el nombre de tu capullito";
         header("Location: formaunicadeidentificacion.php");
         exit();
     } else {
@@ -124,7 +124,7 @@ if(isset($_POST['existente']))
 
     if($query_run)
     {
-        $_SESSION['message'] = "El estudiante se actualizo exitosamente";
+        $_SESSION['message'] = "Agendaste el servicio de cuidado por día exitosamente";
         header("Location: index.php");
         exit(0);
     }
